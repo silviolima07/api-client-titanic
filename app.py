@@ -1,5 +1,6 @@
 import streamlit as st
-import requests, json
+import requests
+import simplejson as json
 import time
 from PIL import Image
 
@@ -58,7 +59,7 @@ def main():
             time.sleep(0.1)
 
         send_request = requests.post(url, data)
-        st.text("Acessando a api no heroku...")
+        #st.text("Acessando a api no heroku...")
         if not send_request.ok:
             st.warning("Houston we have a problem.")
        

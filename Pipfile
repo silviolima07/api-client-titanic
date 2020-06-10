@@ -20,6 +20,7 @@ json = "*"
 time = "*"
 image = "*"
 numpy = "*"
+simplejson = "==3.16.0"
 
 [requires]
 python_version = "3.6"
