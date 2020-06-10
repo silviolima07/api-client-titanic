@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
-import simplejson as json
+import ujson as json
 from PIL import Image
+import time
 
 def checar_retorno(send_request):
   data = send_request.json()
@@ -49,9 +50,10 @@ def main():
     # url da api no heroku 
     url = 'https://app-api-001.herokuapp.com/'
        
-    bar = st.progress(0)
+    
 
     if st.button('Submit'):
+        bar = st.progress(0)
         for i in range(11):
             bar.progress(i * 10)
             # wait

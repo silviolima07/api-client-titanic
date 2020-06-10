@@ -10,6 +10,7 @@ streamlit = "*"
 image = "*"
 request = "*"
 ujson = "*"
+time = "*"
 
 [requires]
 python_version = "3.6"
