@@ -9,7 +9,6 @@ verify_ssl = true
 streamlit = "*"
 image = "*"
 request = "*"
-time = "*"
 ujson = "*"
 
 [requires]

@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import simplejson as json
-import time
 from PIL import Image
 
 def checar_retorno(send_request):
