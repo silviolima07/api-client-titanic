@@ -7,20 +7,13 @@ verify_ssl = true
 
 [packages]
 streamlit = "*"
-sklearn = "*"
-plotly = "*"
-flask = "*"
-jsonify = "*"
-request = "*"
-pandas = "*"
-gunicorn = "*"
-requests = "*"
-scikit-learn = "==0.22.2"
-json = "*"
-time = "*"
 image = "*"
-numpy = "*"
-simplejson = "==3.16.0"
+request = "*"
+time = "*"
+simplejson = "*"
+simplejson-3-16-0 = "*"
+ujson = "==1.35"
+python-simplejson = "*"
 
 [requires]
 python_version = "3.6"
