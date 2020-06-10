@@ -19,6 +19,7 @@ scikit-learn = "==0.22.2"
 json = "*"
 time = "*"
 image = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.6"
