@@ -10,10 +10,7 @@ streamlit = "*"
 image = "*"
 request = "*"
 time = "*"
-simplejson = "*"
-simplejson-3-16-0 = "*"
-ujson = "==1.35"
-python-simplejson = "*"
+ujson = "*"
 
 [requires]
 python_version = "3.6"
