@@ -30,8 +30,8 @@ def main():
     st.sidebar.image(image,caption="",use_column_width=True)
 
     #st.sidebar.markdown("#### --> Streamlit") 
-    st.sidebar.markdown("#### --> RandomForestClassifier (api)")
-    st.sidebar.markdown("#### --> Modelo alocado no Heroku")
+    st.sidebar.markdown("#### > RandomForestClassifier (api Heroku)")
+    #st.sidebar.markdown("#### --> Modelo alocado no Heroku")
 
     st.write('<style>div.Widget.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)     
 
@@ -42,7 +42,10 @@ def main():
     idade = st.slider('Idade',min_value=1, max_value=80, value=20, step=5)
     passagem = st.slider('Valor da Passagem',min_value=0, max_value=512, value=100, step=10)
     #st.markdown("#### Caracteristicas selecionadas do passageiro")
-    st.write('Caracteristicas: '+ classe,'---', sexo, '---',embarque,'---',idade,"anos",'---','$$',passagem)
+    #st.write('Caracteristicas: '+ classe,'---', sexo, '---',embarque,'---',idade,"anos",'---','$$',passagem)
+
+    cloud = Image.open("cloud.png")
+    st.image(cloud,caption="",use_column_width=True)
     
     data = [{'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}]
         
@@ -64,7 +67,7 @@ def main():
         for i in range(11):
             bar.progress(i * 10)
             # wait
-            time.sleep(0.1)
+            time.sleep(0.2)
 
         send_request = requests.post(url, data)
         #st.text("Acessando a api no heroku...")
@@ -72,7 +75,7 @@ def main():
             st.warning("Houston we have a problem.")
        
         elif send_request.ok:
-            st.sidebar.markdown('#### Pela previsão do modelo:')
+            st.sidebar.markdown('#### Previsão do modelo:')
             status = checar_retorno(send_request)
             
             #st.sidebar.markdown(" ")
