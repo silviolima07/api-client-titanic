@@ -67,7 +67,7 @@ def main():
         for i in range(11):
             bar.progress(i * 10)
             # wait
-            time.sleep(0.2)
+            time.sleep(0.1)
 
         send_request = requests.post(url, data)
         #st.text("Acessando a api no heroku...")
