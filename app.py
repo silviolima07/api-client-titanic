@@ -46,11 +46,13 @@ def main():
 
     cloud = Image.open("cloud.png")
     st.image(cloud,caption="",use_column_width=True)
+
+    modelo = 'titanic'
     
     data = [{'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}]
         
     # Choosen data
-    data = {'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}
+    data = {'modelo': modelo, 'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}
     
     # Formato json 
     data = json.dumps(data)
