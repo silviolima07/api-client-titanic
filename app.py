@@ -56,6 +56,8 @@ def main():
     
     # Formato json 
     data = json.dumps(data)
+
+    print(data)
       
     # url da api no heroku 
     url = 'https://app-api-001.herokuapp.com/'
