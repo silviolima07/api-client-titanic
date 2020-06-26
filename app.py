@@ -52,7 +52,7 @@ def main():
     data = [{'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}]
         
     # Choosen data
-    data = {'modelo': modelo, 'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}
+    data = {'Classe': classe, 'Sexo': sexo, 'Embarque':embarque, 'Idade': idade, 'Passagem': passagem}
     
     # Formato json 
     data = json.dumps(data)
