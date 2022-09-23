@@ -82,7 +82,7 @@ playsound==1.2.2
 preshed==3.0.2
 prometheus-client==0.7.1
 prompt-toolkit==3.0.3
-protobuf==3.11.3
+protobuf==3.18.3
 pt-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-2.2.5/pt_core_news_sm-2.2.5.tar.gz
 ptyprocess==0.6.0
 PyAudio==0.2.11
